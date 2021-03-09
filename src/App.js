@@ -2,10 +2,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   return (
-    <Container as="body">
-      <Container fluid className="contenedor-general p-0 h-100">
+    <Container className="contenedor-total">
+      <Col fluid className="contenedor-general p-0 h-100">
         <Row as="header" className="px-3 py-4">
-          <Row as="h1" className="mb-0 px-3">Título</Row>
+          <Col as="h1" className="mb-0">Título</Col>
         </Row>
         <Row>
           <Col md={8} className="principal px-3 py-4">
@@ -27,24 +27,24 @@ function App() {
           </Col>
           <Col md={4} className="sidebar px-3 py-4">
             <Row as="h3" className="px-3">Categorías</Row>
-            <Col as="ul" className="list-unstyled">
-              <Row>Noticias de deporte</Row>
-              <Row>Noticias de ocio</Row>
-              <Row>Noticias de política</Row>
-              <Row>Noiticias de espectáculos</Row>
-            </Col>
+            <Row as="ul" className="list-unstyled">
+              <Col lg={12}>Noticias de deporte</Col>
+              <Col lg={12}>Noticias de ocio</Col>
+              <Col lg={12}>Noticias de política</Col>
+              <Col lg={12}>Noiticias de espectáculos</Col>
+            </Row>
             <Row as="h3" className="px-3">Otras cosas</Row>
-            <Col as="ul" className="list-unstyled">
-              <Row>Nosequé</Row>
-              <Row>Nosecuánto</Row>
-              <Row className="mb-0">Talycual</Row>
-            </Col>
+            <Row as="ul" className="list-unstyled">
+              <Col lg={12}>Nosequé</Col>
+              <Col lg={12}>Nosecuánto</Col>
+              <Col lg={12} className="mb-0">Talycual</Col>
+            </Row>
           </Col>
         </Row>
         <Row as="footer" className="mb-0 px-3 py-4">
           <Col className="mb-0 text-center"> Texto del footer</Col>
         </Row>
-      </Container>
+      </Col>
     </Container >
   );
 }
