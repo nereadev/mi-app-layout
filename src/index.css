@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body {
+.contenedor-total {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
   'Open Sans', 'Helvetica Neue', sans-serif;
   height: 100vh;
@@ -33,4 +33,7 @@ header, footer {
 }
 p {
   font-size: 16px;
+}
+li {
+  flex-basis: 100%;
 }
